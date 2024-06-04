@@ -17,7 +17,7 @@ const Signup = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     setLoading(true);
-    axios.post('http://localhost:3000/user/signup', {
+    axios.post('https://login-api-tan.vercel.app/user/signup', {
       userName: username,
       password: password,
       email: email,
