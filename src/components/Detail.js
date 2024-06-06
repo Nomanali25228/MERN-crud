@@ -11,7 +11,7 @@ const Detail = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get(`https://login-api-tan.vercel.app/category/${params.id}`)
+        axios.get(`https://api-qaeq.vercel.app/category/${params.id}`)
             .then(res => {
                 setLoading(false);
                 setCategory(res.data.category);

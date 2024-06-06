@@ -26,7 +26,7 @@ const AddCategory = () => {
         formData.append('name', category);
         formData.append('photo', selectedFile);
 
-        axios.post('https://login-api-tan.vercel.app/category', formData, {
+        axios.post('https://api-qaeq.vercel.app/category', formData, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }

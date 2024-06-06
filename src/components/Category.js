@@ -20,7 +20,7 @@ const Category = () => {
 
   const delet = (id, imglink) => {
     if (window.confirm('Are you sure?')) {
-      axios.delete(`https://login-api-tan.vercel.app/category?id=${id}&imageUrl=${imglink}`)
+      axios.delete(`https://api-qaeq.vercel.app/category?id=${id}&imageUrl=${imglink}`)
         .then(res => {
           console.log(res);
           window.alert('Data deleted');
@@ -33,7 +33,7 @@ const Category = () => {
   }
 
   const getdata = () => {
-    axios.get('https://login-api-tan.vercel.app/category', {
+    axios.get('https://api-qaeq.vercel.app/category', {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token')
       }

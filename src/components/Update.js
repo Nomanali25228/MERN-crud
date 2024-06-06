@@ -17,7 +17,7 @@ const Update = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get(`http://localhost:3000/category/${params.id}`)
+        axios.get(`https://api-qaeq.vercel.app/category/${params.id}`)
             .then(res => {
                 setLoading(false);
                 const categoryData = res.data.category;
@@ -43,7 +43,7 @@ const Update = () => {
         formData.append('name', category);
         formData.append('photo', selectedFile);
 
-        axios.put(`https://login-api-tan.vercel.app/category/${params.id}`, formData)
+        axios.put(`https://api-qaeq.vercel.app/category/${params.id}`, formData)
             .then(res => {
                 console.log(res);
                 setLoading(false);

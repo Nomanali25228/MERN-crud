@@ -15,7 +15,7 @@ const Login = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     setLoading(true);
-    axios.post('https://login-api-tan.vercel.app/user/login', {
+    axios.post('https://api-qaeq.vercel.app/user/login', {
       userName: username,
       password: password,
     })
